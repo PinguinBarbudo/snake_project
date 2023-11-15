@@ -6,7 +6,7 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
-        self.color("white")
+        self.color("palegreen")
         self.penup()
         self.goto(0,270)
         self.hideturtle()
@@ -18,6 +18,7 @@ class Scoreboard(Turtle):
     
     def game_over(self):
         self.goto(0, 0)
+        self.color("tomato")
         self.write(arg="GAME OVER", align=ALIGNMENT, font=FONT)
         
         
